@@ -31,7 +31,7 @@ $(document).ready(function() {
         playerName: name.val().trim(),
         checkedIn: true,
         commander: "none",
-        table: 0,
+        assignedTable: 0,
         points: 0,
         LeagueId: 1
       };
