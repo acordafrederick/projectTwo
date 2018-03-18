@@ -23,8 +23,11 @@ VALUES
 
 INSERT INTO `Leagues` (`id`,`leagueName`,`leaguePlayers`,`leaguePoints`,`leagueStanding`,`leagueCurrentGames`,`createdAt`,`updatedAt`, `UserId`)
 VALUES
-(NULL,'Austinerds','[\"Vanessa\",\"Fred\",\"Matt\",\"Bob\",\"Venkat\",\"Keith\",\"Doug\"]',85,'First',3,'2018-03-14 21:45:47','2018-03-14 21:45:47',2),
-(NULL,'Cowboys','[\"Jill\",\"Jack\",\"Jim\",\"Joey\",\"Joseph\",\"Jeb\"]',35,'Second',2,'2018-03-14 21:45:47','2018-03-14 21:45:47',3);
+(NULL,'Austinerds','\"[\\\"Vanessa\\\",\\\"Fred\\\",\\\"Matt\\\",\\\"Bob\\\",\\\"Venkat\\\",\\\"Keith\\\",\\\"Doug\\\"]\"',85,'First',3,'2018-03-14 21:45:47','2018-03-14 21:45:47',2),
+(NULL,'Cowboys','\"[\\\"Jill\\\",\\\"Jack\\\",\\\"Jim\\\",\\\"Joey\\\",\\\"Joseph\\\",\\\"Jeb\\\"]\"',35,'Second',2,'2018-03-14 21:45:47','2018-03-14 21:45:47',3);
+
+-- JSON Array Format
+-- '\"[\\\"Willy\\\",\\\"Willow\\\",\\\"Wiley\\\",\\\"Wonky\\\"]\"'
 
 INSERT INTO `Gameinfos` (`id`,`playerName`,`checkedIn`,`commander`,`assignedTable`,`points`,`createdAt`,`updatedAt`,`LeagueId`)
 VALUES
