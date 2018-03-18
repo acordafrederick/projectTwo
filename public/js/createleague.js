@@ -45,16 +45,19 @@ $(document).ready(function() {
         leaguePlayersArray[i] = playerNameArray[i].value.trim();
     }
     console.log(leaguePlayersArray);
+
     // Constructing a newLeague object to hand to the database
     var newLeague = {
       leagueName: leagueName,
-      leaguePlayers: leaguePlayersArray,
+      leaguePlayers: JSON.stringify(leaguePlayersArray),
       leaguePoints: 0,
-      leagueStanding: null,
+      leagueStanding: "LAST",
       leagueCurrentGames: 0,
-      UserID: leagueIDInDB
+      UserId: leagueIDInDB
     };
     console.log(newLeague);
+    var leaguePlayersTest = JSON.stringify(leaguePlayersArray);
+    console.log("Reverse stringify test for the player array: ", JSON.parse(leaguePlayersTest));
     submitLeague(newLeague);
   });
 

@@ -9,6 +9,26 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/api/leagues/:userid", function(req, res) {
+    db.League.findOne(req.body, {
+      where: {
+        UserId: req.body.id
+      }
+    }).then(function(dbLeague) {
+      res.json(dbLeague);
+    });
+  });
+
+  app.get("/api/gameInfo/:leagueId", function(req, res) {
+    db.Gameinfo.findAll(req.body, {
+      where: {
+        LeagueId: req.body.id
+      }
+    }).then(function(dbGame){
+      res.json(dbGame);
+    })
+  })
+
   app.post("/api/gameInfo", function(req, res) {
     db.Gameinfo.create(req.body).then(function(dbGame) {
       res.json(dbGame);

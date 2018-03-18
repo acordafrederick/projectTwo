@@ -1,4 +1,3 @@
-
 window.onload = function () {
 
     var supplementalCardsDiv = document.getElementById("supplementalCardsDiv");
@@ -59,14 +58,14 @@ window.onload = function () {
 
     var commanderCardsArray = ["Atraxa, Praetors' Voice","Freya"];
     var commanderCardsImageArray = [];
-
+    
     const getImageURLs = () => {
         const promises = [];
         var queryURL = [];
-
+      
         for (let index = 0; index < commanderCardsArray.length; index++) {
             queryURL[index] = "https://api.deckbrew.com/mtg/cards?name=" + commanderCardsArray[index];
-            // queryURL = "https://scryfall.com/search?q=%22Atraxa%2C+Praetors%27+Voice%22+OR+%22Freya%22&unique=cards&as=grid&order=name";
+            // queryURL = "https://scryfall.com/search?q=%22Atraxa%2C+Praetors%27+Voice%22+OR+%22Freya%22&unique=cards&as=grid&order=name"; 
             promises.push(new Promise((resolve, reject) => {
                 $.ajax({
                     url: queryURL[index],
@@ -74,27 +73,27 @@ window.onload = function () {
                 })
                 .then(function(response) {
                     commanderCardsImageArray[index] = response[0].editions[0].image_url;
-                })
+                })  
             })) //promises.push
-        } //for (let index =
+        } //for (let index =   
         return Promise.all(promises);
-    }; //const getImageURLs
-
+    }; //const getImageURLs 
+     
 
     const imageContents = getImageURLs().then(contents => {
         console.log(contents)
     })
     .catch(err => console.error(err));
-};  //window.onload
+};  //window.onload    
+    
 
 
-
-
-
+    
+    
     // magicSearch(queryURL);
 
-
-
+    
+    
     // for (let index = 0; index < commanderCardsArray.length; index++) {
     //     var cardName = commanderCardsArray[index];
     //     var magicSearch = function(cardName) {
@@ -130,5 +129,7 @@ window.onload = function () {
     //   console.log(commanderCardImageURL);
 
       // Constructing HTML containing the artist information
-
+      
     //   var artistImage = $("<img>").attr("src", response[0].editions[0].image_url)
+ 
+  
