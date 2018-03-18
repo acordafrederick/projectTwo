@@ -1,38 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/thumbnail.png">
+    <title>EDH League Manager</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="//cdn.jsdelivr.net/npm/keyrune@latest/css/keyrune.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Bangers|Caveat|Cutive+Mono|Luckiest+Guy|Neucha|Permanent+Marker|Rock+Salt|Space+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="icon" href="images/thumbnail.png">
-        <title>Magic The Gathering</title>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link href="//cdn.jsdelivr.net/npm/keyrune@latest/css/keyrune.min.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    </head>
-
-
-    <body>
-
-        <nav class="navbar fixed-top w3-pale-yellow w3-card">
-            <a class="navbar-brand" href="#">
-                <img src="images/thumbnail.png" width="30" class="d-inline-block align-top w3-card rounded-circle" alt="Magic The Gathering Icon">
+<body>
+    <nav class="navbar fixed-top w3-black w3-card">
+        <a class="navbar-brand" href="#">
+            <img src="images/magic-the-gathering-logo-elements.png" width="30" class="d-inline-block align-top w3-card rounded-square" alt="Magic The Gathering Icon">
+          EDH League Manager
+        </a>
+        <!-- Logout added by Venkat -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/logout">
+            Logout
             </a>
-            <!-- <ul class="nav justify-content-end">
-            <li class="nav-item">
-               <a class="nav-link" href="#">Create League</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Admin Sign In</a>
-            </li>
-            </ul> -->
-        </nav>
+        </div>
+    </nav>
+    <style>
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
 
+    .bg {
+        /* The image used */
+        background-image: url("images/225773675-mtg-land-wallpaper.jpg");
+
+        /* Full height */
+        height: 45%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index:-1;
+    }
+    </style>
+<div class="bg"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">

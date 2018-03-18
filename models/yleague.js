@@ -6,14 +6,15 @@ module.exports = function(sequelize, DataTypes) {
     //defined by Sequelize
     leagueName: {
       type: DataTypes.STRING,
-    //   allowNull: false,
+      allowNull: false,
+      unique: true
     //   len:[5-15]
       // validate: {
       //   len: [1]
     },
-    // leaguePlayers: {
-    //   type: DataTypes.JSON,
-    // },
+    leaguePlayers: {
+      type: DataTypes.JSON,
+    },
     leaguePoints: {
        type: DataTypes.INTEGER,
     },
