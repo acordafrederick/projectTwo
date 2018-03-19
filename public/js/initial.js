@@ -81,6 +81,12 @@ $(document).ready(function() {
 
       var commander = $("<input type='text' class='col-md-3 form-control cmdr' value=" + data[i].commander + " readonly /><button class='col-md-1  btn btn-outline-secondary editCmdr' type='button'>Edit</button></div>");
 
+      var commander = $("<div class='form-group'>");
+      var commanderSelect = $("<select class='form-control'>");
+      var commanderList =
+      var options = $("<option value='Yahenni'>Yahenni</option>");
+      // <option value='Atraxa'>Atraxa</option><option value='Nekusar'>Nekusar</option><option value='Kaalia'>Kaalia</option><option value='Zur'>Zur</option><option value='Uril'>Uril</option><option value='Derevi'>Derevi</option><option value='Karador'>Karador</option><option value='Maelstrom Wanderer'>Maelstrom Wanderer</option><option value='Leovold'>Leovold</option><option value='Jhoira'>Jhoira</option>
+
       var playerPoints = $("<div class='col-md-4'>"+data[i].points+"<span><button class='btn btn-outline-secondary' type='button'>Edit</button></span></div>");
       // $("#points").append(playerPoints);
       $(newRow).append(player);
