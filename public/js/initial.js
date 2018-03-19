@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     // var leagueForm = $("#league");
     var games = $("#numberOfGames");
-    // var name = $("#name");
+    var name = $("#name");
 
     var leaguePlayers;
     var gameSize = [];
@@ -216,6 +216,7 @@ $(document).ready(function() {
         })
         .then(function(results) {
           console.log("absent", results);
+          window.location.href="/game.html";
         });
       });
     }

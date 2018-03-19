@@ -55,7 +55,7 @@
       <form class="login">
         <div class="card elevation-2 limit-width sign-up-card above">
             <div class="card-body">
-              <form class="login">
+            
               <div class="input-group email">
               <input type="email" class="form-control" id="email-input" placeholder="Email">
             </div>
@@ -69,6 +69,7 @@
               <span class="sr-only">Error:</span> <span class="msg"></span>
             </div>
             <button type="submit" class="btn btn-primary" id="submitButton">Login</button>
+          </form>
 
           </div>
         </div>
@@ -80,8 +81,11 @@
           <br>
 
           </div>
+
           <div class="card-footer">
-            <button type="submit" class="btn btn-primary" href="/signup">Sign Up</button>
+            <form id="signupForm" action="/signup">
+            <button type="submit" id="signupButton" class="btn btn-primary" href="/signup">Sign Up</button>
+          </form>
           </div>
         </div>
       </div>

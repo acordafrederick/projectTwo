@@ -14,3 +14,6 @@ CREATE TABLE IF NOT EXISTS `Gameinfos` (`id` INTEGER NOT NULL auto_increment , `
 `commander` VARCHAR(255), `assignedTable` INTEGER NOT NULL, `points` INTEGER, `createdAt` DATETIME NOT NULL,
 `updatedAt` DATETIME NOT NULL, `LeagueId` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`LeagueId`)
 REFERENCES `Leagues` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `Commanders` (`id` INTEGER NOT NULL auto_increment , `commanderName` VARCHAR(255) NOT NULL UNIQUE,
+`url` TEXT NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
